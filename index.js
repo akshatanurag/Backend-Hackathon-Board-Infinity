@@ -11,6 +11,14 @@ var dbConnect = mongoose.connection
 
 dbConnect.on("open",()=>{
 
+    app.get("/",(req,res)=>{
+        res.status(200).json({
+            name: "Akshat Anurag",
+            rollNo: 1705577,
+            University: "KIIT (D) University"
+        })
+    })
+
     app.get("/list",(req,res)=>{
         try {
             myTodo.find().then((data)=>{
