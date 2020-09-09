@@ -12,7 +12,7 @@ var dbConnect = mongoose.connection
 dbConnect.on("open",()=>{
 
     app.get("/",(req,res)=>{
-        res.status(200).json({
+        res.status(200).send({
             name: "Akshat Anurag",
             rollNo: 1705577,
             University: "KIIT (D) University"
