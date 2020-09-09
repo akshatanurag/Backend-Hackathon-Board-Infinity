@@ -51,6 +51,6 @@ dbConnect.on("open",()=>{
 })
 
 let port = process.env.PORT||8080
-app.listen(port,()=>{
+app.listen(port,process.env.IP,()=>{
     console.log(`Server up on port ${port}`)
 })
