@@ -7,7 +7,7 @@
         - gets all the todos stored in the database
 
     2.  /add - POST
-        - accepted paraments
+        - accepted parameters
             - task_name (String,Required)
             - task_description (String,Required)
             - creator (String,Required)
